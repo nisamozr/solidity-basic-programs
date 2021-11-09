@@ -16,6 +16,7 @@ contract mappingSample{
     function deleteMap(address _dd) public{
         delete myMap[_dd];
     }
+    // in solidity mapping return 0 if the element delete 
     
     
 }
