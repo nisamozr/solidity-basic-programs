@@ -28,12 +28,9 @@ contract election{
     }
     
     function vote(uint candidatsId) public {
+        require(candidatsId > 0 && candidatsId <= candedatsCount);
         require(!votes[msg.sender]);
          votes[msg.sender] = true;
         candidats[candidatsId].vote++;
-    }
-    
-    
-    
-    
+    }   
 }
